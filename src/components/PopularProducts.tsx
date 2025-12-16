@@ -25,7 +25,7 @@ export default function PopularProducts() {
           </div>
           <Link 
             href="/product" 
-            className="text-[#84c225] font-medium hover:underline"
+            className="text-[#e63946] font-medium hover:underline"
           >
             View All →
           </Link>
@@ -35,9 +35,9 @@ export default function PopularProducts() {
         <div className="flex items-center gap-3 mb-6 overflow-x-auto pb-2">
           <button
             onClick={() => setActiveCategory(0)}
-            className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+            className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors active:scale-95 ${
               activeCategory === 0
-                ? 'bg-[#84c225] text-white'
+                ? 'bg-[#e63946] text-white'
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
             }`}
           >
@@ -47,9 +47,9 @@ export default function PopularProducts() {
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors active:scale-95 ${
                 activeCategory === category.id
-                  ? 'bg-[#84c225] text-white'
+                  ? 'bg-[#e63946] text-white'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >

@@ -14,7 +14,7 @@ export default function HeroSection() {
       subtitle: 'Delivered in 10 Minutes',
       description: 'Get farm-fresh vegetables at your doorstep',
       discount: 'Up to 40% OFF',
-      bgColor: 'bg-gradient-to-r from-[#84c225] to-[#6ba31a]',
+      bgColor: 'bg-gradient-to-r from-[#e63946] to-[#c1121f]',
       imageUrl: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=600&h=400&fit=crop',
     },
     {
@@ -23,7 +23,7 @@ export default function HeroSection() {
       subtitle: 'Grocery at Best Prices',
       description: 'Atta, Rice, Dal & more at lowest prices',
       discount: 'Save ₹200 on first order',
-      bgColor: 'bg-gradient-to-r from-[#f97316] to-[#ea580c]',
+      bgColor: 'bg-gradient-to-r from-[#ffc300] to-[#ffb700]',
       imageUrl: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&h=400&fit=crop',
     },
     {
@@ -32,7 +32,7 @@ export default function HeroSection() {
       subtitle: 'Handpicked Quality',
       description: 'Premium fruits from trusted farms',
       discount: 'Flat 25% OFF',
-      bgColor: 'bg-gradient-to-r from-[#d23f57] to-[#be123c]',
+      bgColor: 'bg-gradient-to-r from-[#e63946] to-[#c1121f]',
       imageUrl: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=600&h=400&fit=crop',
     },
   ];
@@ -67,7 +67,7 @@ export default function HeroSection() {
                     <p className="text-white/80 mb-4">{slide.description}</p>
                     <Link 
                       href="/product"
-                      className="inline-block bg-white text-gray-800 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-100 transition-colors"
+                      className="inline-block bg-white text-gray-800 px-6 py-2.5 rounded-lg font-medium hover:bg-gray-100 transition-all duration-200 active:scale-95"
                     >
                       Shop Now
                     </Link>
@@ -79,6 +79,7 @@ export default function HeroSection() {
                       fill
                       className="object-cover"
                       priority={index === 0}
+                      loading={index === 0 ? 'eager' : 'lazy'}
                     />
                   </div>
                 </div>
@@ -91,7 +92,7 @@ export default function HeroSection() {
                 <button
                   key={index}
                   onClick={() => setCurrentSlide(index)}
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                  className={`w-2.5 h-2.5 rounded-full transition-all duration-200 active:scale-95 ${
                     index === currentSlide ? 'bg-white w-6' : 'bg-white/50'
                   }`}
                 />

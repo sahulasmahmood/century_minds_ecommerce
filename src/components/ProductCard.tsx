@@ -64,7 +64,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         
         {/* Product Name */}
         <Link href={`/product/${product.id}`}>
-          <h3 className="text-sm font-medium text-gray-800 mb-2 line-clamp-2 h-10 hover:text-[#84c225]">
+          <h3 className="text-sm font-medium text-gray-800 mb-2 line-clamp-2 h-10 hover:text-[#e63946] transition-colors">
             {product.name}
           </h3>
         </Link>
@@ -77,7 +77,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               e.stopPropagation();
               setShowVariants(!showVariants);
             }}
-            className="w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded text-sm text-gray-700 hover:bg-gray-200"
+            className="w-full flex items-center justify-between px-3 py-2 bg-gray-100 rounded text-sm text-gray-700 hover:bg-gray-200 transition-colors active:scale-95"
           >
             <span>{currentVariant.weight}</span>
             <IconChevronDown size={16} className={`transition-transform ${showVariants ? 'rotate-180' : ''}`} />
@@ -143,22 +143,22 @@ export default function ProductCard({ product }: ProductCardProps) {
           {quantity === 0 ? (
             <button
               onClick={handleAddToCart}
-              className="flex-1 py-2 px-4 border-2 border-[#d23f57] text-[#d23f57] rounded font-medium hover:bg-[#d23f57] hover:text-white transition-colors"
+              className="flex-1 py-2 px-4 border-2 border-[#e63946] text-[#e63946] rounded font-medium hover:bg-[#e63946] hover:text-white transition-all duration-200 active:scale-95"
             >
               Add
             </button>
           ) : (
-            <div className="flex-1 flex items-center justify-between border-2 border-[#d23f57] rounded overflow-hidden">
+            <div className="flex-1 flex items-center justify-between border-2 border-[#e63946] rounded overflow-hidden">
               <button
                 onClick={handleDecrement}
-                className="px-3 py-2 text-[#d23f57] hover:bg-[#d23f57] hover:text-white transition-colors"
+                className="px-3 py-2 text-[#e63946] hover:bg-[#e63946] hover:text-white transition-all duration-200 active:scale-95"
               >
                 <IconMinus size={16} />
               </button>
-              <span className="font-medium text-[#d23f57]">{quantity}</span>
+              <span className="font-medium text-[#e63946]">{quantity}</span>
               <button
                 onClick={handleIncrement}
-                className="px-3 py-2 text-[#d23f57] hover:bg-[#d23f57] hover:text-white transition-colors"
+                className="px-3 py-2 text-[#e63946] hover:bg-[#e63946] hover:text-white transition-all duration-200 active:scale-95"
               >
                 <IconPlus size={16} />
               </button>

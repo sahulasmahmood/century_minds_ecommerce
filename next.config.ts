@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
         hostname: 'cdn.worldvectorlogo.com',
       },
     ],
+    unoptimized: false,
+  },
+  experimental: {
+    optimizePackageImports: ['@tabler/icons-react'],
   },
 };
 

@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       {/* Main Header */}
-      <div className="bg-[#84c225]">
+      <div className="bg-[#e63946]">
         <div className="container mx-auto px-4 py-3">
           <div className="flex items-center justify-between gap-6">
             {/* Logo */}
@@ -45,7 +45,7 @@ export default function Header() {
             {/* Shop by Category Dropdown */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <button className="bg-[#5a8a1a] text-white px-4 py-2.5 rounded-md flex items-center gap-2 hover:bg-[#4a7a10] focus:outline-none font-medium">
+                <button className="bg-[#c1121f] text-white px-4 py-2.5 rounded-md flex items-center gap-2 hover:bg-[#a01018] focus:outline-none font-medium transition-colors active:scale-95">
                   <IconMenu2 size={20} />
                   Shop by Category
                   <IconChevronDown size={18} />
@@ -118,10 +118,10 @@ export default function Header() {
             </DropdownMenu>
 
             {/* Cart */}
-            <Link href="/cart" className="flex items-center gap-2 text-white hover:opacity-90">
+            <Link href="/cart" className="flex items-center gap-2 text-white hover:opacity-90 transition-opacity">
               <div className="relative">
                 <IconShoppingCart size={24} />
-                <span className="absolute -top-2 -right-2 bg-[#d23f57] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-medium">
+                <span className="absolute -top-2 -right-2 bg-[#ffc300] text-gray-900 text-xs rounded-full w-5 h-5 flex items-center justify-center font-medium">
                   0
                 </span>
               </div>
@@ -142,7 +142,7 @@ export default function Header() {
               <Link 
                 key={category.id}
                 href={`/category/${category.slug}`}
-                className="flex items-center gap-2 text-gray-700 hover:text-[#84c225] whitespace-nowrap text-sm font-medium py-1"
+                className="flex items-center gap-2 text-gray-700 hover:text-[#e63946] whitespace-nowrap text-sm font-medium py-1 transition-colors"
               >
                 <span>{category.icon}</span>
                 <span>{category.name}</span>

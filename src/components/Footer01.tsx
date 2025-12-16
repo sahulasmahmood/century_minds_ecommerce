@@ -28,16 +28,16 @@ export default function Footer01() {
               We deliver quality products at the best prices, right to your doorstep.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#84c225] transition-colors">
+              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#e63946] transition-colors active:scale-95">
                 <IconBrandFacebook size={18} />
               </a>
-              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#84c225] transition-colors">
+              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#e63946] transition-colors active:scale-95">
                 <IconBrandTwitter size={18} />
               </a>
-              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#84c225] transition-colors">
+              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#e63946] transition-colors active:scale-95">
                 <IconBrandInstagram size={18} />
               </a>
-              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#84c225] transition-colors">
+              <a href="#" className="w-9 h-9 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#e63946] transition-colors active:scale-95">
                 <IconBrandYoutube size={18} />
               </a>
             </div>
@@ -47,10 +47,10 @@ export default function Footer01() {
           <div>
             <h4 className="text-white font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/about" className="hover:text-[#84c225]">About Us</Link></li>
-              <li><Link href="/contact" className="hover:text-[#84c225]">Contact Us</Link></li>
-              <li><Link href="/faq" className="hover:text-[#84c225]">FAQs</Link></li>
-              <li><Link href="/order-tracking" className="hover:text-[#84c225]">Track Order</Link></li>
+              <li><Link href="/about" className="hover:text-[#e63946] transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="hover:text-[#e63946] transition-colors">Contact Us</Link></li>
+              <li><Link href="/faq" className="hover:text-[#e63946] transition-colors">FAQs</Link></li>
+              <li><Link href="/order-tracking" className="hover:text-[#e63946] transition-colors">Track Order</Link></li>
             </ul>
           </div>
 
@@ -58,10 +58,10 @@ export default function Footer01() {
           <div>
             <h4 className="text-white font-semibold mb-4">Customer Service</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/shipping" className="hover:text-[#84c225]">Shipping Policy</Link></li>
-              <li><Link href="/returns" className="hover:text-[#84c225]">Returns & Refunds</Link></li>
-              <li><Link href="/privacy" className="hover:text-[#84c225]">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="hover:text-[#84c225]">Terms & Conditions</Link></li>
+              <li><Link href="/shipping" className="hover:text-[#e63946] transition-colors">Shipping Policy</Link></li>
+              <li><Link href="/returns" className="hover:text-[#e63946] transition-colors">Returns & Refunds</Link></li>
+              <li><Link href="/privacy" className="hover:text-[#e63946] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-[#e63946] transition-colors">Terms & Conditions</Link></li>
             </ul>
           </div>
 

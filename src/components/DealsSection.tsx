@@ -58,7 +58,7 @@ export default function DealsSection() {
                   />
                 </div>
                 <h3 className="font-semibold text-gray-800">{deal.title}</h3>
-                <p className="text-[#84c225] font-medium text-sm">{deal.discount}</p>
+                <p className="text-[#e63946] font-medium text-sm">{deal.discount}</p>
               </Link>
             ))}
           </div>

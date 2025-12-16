@@ -26,7 +26,7 @@ export default function TrendingProducts() {
           </div>
           <Link 
             href="/product" 
-            className="text-[#84c225] font-medium hover:underline"
+            className="text-[#e63946] font-medium hover:underline"
           >
             View All →
           </Link>
